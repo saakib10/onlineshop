@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,500,600,700|Merriweather:300,400,300i,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/swiper.css' %}" type="text/css" />
+
+	<!-- shop Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="{% static 'demos/shop/shop.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'demos/shop/css/fonts.css' %}" type="text/css" />
+	<!-- / -->
+    {% block style %}
+    
+    {% endblock %}
+
+
+	<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="{% static 'css/colors.php?color=000000' %}" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Shop Demo | Canvas</title>
+
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+		{% block modal %}{% endblock %}
+
+		{% include 'navbar.html' %}
+
+		{% block slider %}{% endblock %}
+
+		{% block content %}{% endblock %}
+	</div>
+    
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-line-arrow-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/plugins.min.js' %}"></script>
+    {% block script %}
+
+    {% endblock %}
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="{% static 'js/functions.js' %}"></script>
+
+	<!-- ADD-ONS JS FILES -->
+	<script>
+
+	</script>
+
+</body>
+</html>
